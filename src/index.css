@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*>*{
+  font-family: Poppins;
+}
+.main{
+  @apply min-h-screen bg-slate-200 
+}
+.section{
+  @apply flex flex-col space-y-8 bg-slate-800  text-slate-100 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col space-y-4 pt-2 px-0 md:p-8 rounded-lg shadow-lg min-w-[90vw] min-h-[auto] md:min-w-[500px] md:max-w-[980px] mx-auto my-auto
+}
+.label{
+  @apply mx-2 md:mx-0 text-base md:text-2xl
+}
+.input{
+  @apply mx-2 md:mx-0 text-slate-800 border border-neutral-300 rounded-lg py-1 px-2 
+}
+.results{
+  @apply bg-teal-700  py-4 px-2 md:py-8 md:px-4 rounded-lg md:font-bold text-sm md:text-xl
+}
+.results-list{
+  @apply flex flex-col space-y-4
+}
+.result-item{
+  @apply flex justify-between   font-bold text-[10px] md:text-xl
+}
+.result-money{
+  @apply flex space-x-4 font-bold text-[10px] md:text-xl
+}
